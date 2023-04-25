@@ -1,0 +1,169 @@
+.head1 {
+  background-color: #bbb;
+  padding: 10px;
+  color: #000000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}.a{
+   display: flex;
+    color: rgb(133, 152, 168);
+    background-color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    border: 2%;
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Quicksand','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;  
+}
+
+.main,a{
+   text-decoration: none;
+   background-repeat: no-repeat;
+}
+
+.float1 {
+  float: left;
+}
+.section1 {
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px;
+    border-bottom: 2cm;
+}
+
+/* For Slide Images */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.form {
+  margin:2% 25% 2% 25%;
+  align-content: center;
+ width: 50%;
+  border-radius: 25px;
+  border: #000000;
+  background-color: #717171;
+  font-size: 24px;
+  text-align: left;
+}
+input {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 20px;
+}
+.left{
+  float: left;
+}
+.right {
+  float: right;
+}
+.button1 {
+  margin: 5px;
+  font-size: 15px;
+  background-color: #000000;
+  color: #bbb;
+  padding: 5px;
+  border-radius: 5px;
+}
+.button1:hover {
+  background-color: rgb(39, 184, 44);
+  color: #ffffff;
+}
+.foot {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+}
+
+

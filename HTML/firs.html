@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/firs.css" />
+    <title>MubeenX</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head1">
+      MubeenX <br />Technology
+      <span style="float: right">Qatar||India||US</span>
+    </div>
+    <div class="a" id="top">
+      <a class="a" href="firs.html">Home</a>
+      <a class="a" href="secPage.html">Maintenance</a>
+      <a class="a" href="#contactNo">Contact</a>
+      <a class="a" href="#loginForm">Log-In</a>
+    </div>
+    <br />
+    <!-- ----------------Image Section--------- -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/images/cctvBg.jpg" style="width: 100%" />
+        <div class="text">360 View</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/images/cctvMain.jpg" style="width: 100%" />
+        <div class="text">Office Inside</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/images/cctvBg.jpg" style="width: 100%" />
+        <div class="text">Affordable For Home</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <br />
+    <!-- -------Main Section----------- -->
+    <div class="section1" style="float: left">
+      <h4 style="text-align: center">
+        <span style="font-weight: bold; font-size: 25px"> Our Expertise</span>
+      </h4>
+      Top class engineers serve you the best security solutions. Top class
+      engineers serve you the best security solutions. With Versatile Techno ,
+      we propose to add value to your efforts of sustaining a safe and secure
+      environment, by substitute as the virtual security guard, intended at
+      protecting your property at all times.
+      <img
+        src="/images/cctvBg.jpg"
+        style="margin: 5px; width: 40%; height: 250px; float: right"
+      />
+      <ul>
+        <li>IP Based CCTV design, implementation, Operation and maintenance</li>
+        <li>Integreted control and command center</li>
+        <li>City surveillance, traffic planning and monitoring</li>
+        <li>Smart city initiative</li>
+        <li>Biometric, RFID and Physical layer security</li>
+        <li>Wireless and communication infrastructure</li>
+        <li>POS,E-ticketing,E-metering and Remote telemetry</li>
+      </ul>
+    </div>
+
+    <div class="section2" style="text-align: center">
+      <span style="text-align: center; font-weight: bold; font-size: 25px"
+        >Our Clients</span
+      >
+      <marquee style="color: rgb(97, 19, 83); font-size: 25px">
+        <img
+          src="/images/images (1).png"
+          style="width: 180px; height: 150px; margin-right: 2%"
+        />
+        <img
+          src="/images/images (2).png"
+          style="width: 180px; height: 150px; margin-right: 2%"
+        />
+        <img
+          src="/images/images (7).png"
+          style="width: 180px; height: 150px; margin-right: 2%"
+        />
+        <img
+          src="/images/images (1).png"
+          style="width: 180px; height: 150px; margin-right: 2%"
+        />
+        <img
+          src="/images/images (2).png"
+          style="width: 180px; height: 150px; margin-right: 2%"
+        />
+        <img
+          src="/images/images (7).png"
+          style="width: 180px; height: 150px; margin-right: 2%"
+        />
+      </marquee>
+    </div>
+    <!-- ------Footer-------------- -->
+    <div class="foot" id="contact" style="text-align: center">
+      <footer>
+        <div id="contactNo" class="main" style="text-align: center">
+          Follow Us <br /><a href="#">facebook</a>| |<a href="#">twitter</a>|
+          |<a href="#">whatsapp</a>| |<a href="#">Youtube</a>
+        </div>
+      </footer>
+    </div>
+    <!-- -----------------------Form Section---------- -->
+    <div class="form">
+      <form style="text-align: center">
+        <div id="loginForm">
+          <label for="name">Name</label><br />
+          <input id="name" style="width: 40%" description="hidden" />
+          <br />
+          <label for="mail">Mail</label><br />
+          <input id="mail" style="width: 40%" /><br />
+        </div>
+        <div>
+          <label for="password">Password</label><br />
+          <input id="password" style="width: 40%" />
+          <br />
+          <label for="number">Contact No</label><br />
+          <input id="number" style="width: 40%" />
+        </div>
+        <div>
+          <button class="button1" onclick="">Submit</button>
+        </div>
+      </form>
+      <div>
+        <button><a href="#top">To top</a></button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
