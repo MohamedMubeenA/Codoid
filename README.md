@@ -1,0 +1,2 @@
+# Codoid
+Responsive Static Website
